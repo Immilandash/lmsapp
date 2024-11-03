@@ -1,0 +1,43 @@
+.dashboard-layout {
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-image: linear-gradient(to right #4ca1af, #222); /* Light background for main content */
+}
+
+.student-list {
+  margin-top: 20px;
+}
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #222; /* Dark purple base for table background */
+  color: #ffffff; /* White text for readability */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.students-table th {
+  background: linear-gradient(135deg,#222, #183b3f, #222); /* Subtle gradient for header */
+  color: #ffffff;
+  padding: 12px;
+  text-align: left;
+}
+
+.students-table td {
+  background-color: #235158; /* Solid dark purple for rows */
+  padding: 12px;
+  border: 1px solid #222; /* Dark border color */
+}
+
+.students-table tr:nth-child(even) td {
+  background-color: #222; /* Slightly darker purple for alternate rows */
+}
+
+.students-table tr:hover td {
+  background-color: #000; /* Dark purple highlight on hover */
+}

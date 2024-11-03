@@ -1,38 +1,25 @@
-.App {
-  text-align: center;
+body {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for colors */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Optional: Style the navbar and other components in dark mode */
+/* .navbar { */
+  /* background: linear-gradient(45deg, #3b0a70, #1c1f7a); */
+   /* Adjust gradient colors as needed */
+/* } */
+
+.sidebar {
+  background-color: #2d2d2d; /* Example dark sidebar background */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dashboard-container {
+  background-color: #1e1e1e; /* Example dark dashboard background */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Additional dark mode styles for buttons, inputs, etc., can be added here */
