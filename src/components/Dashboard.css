@@ -1,43 +1,68 @@
+/* Main Dashboard Layout */
 .dashboard-layout {
   display: flex;
 }
 
+/* Main Content Area */
 .main-content {
   flex: 1;
   padding: 20px;
-  background-image: linear-gradient(to right #4ca1af, #222); /* Light background for main content */
+  background-image: linear-gradient(to right, #4ca1af, #222);
 }
 
 .student-list {
   margin-top: 20px;
 }
 
+/* Scrollable Table */
+.students-table-wrapper {
+  max-height: 70vh; /* Limit height to enable scrolling for long tables */
+  overflow-y: auto; /* Vertical scroll if content overflows */
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
 .students-table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #222; /* Dark purple base for table background */
-  color: #ffffff; /* White text for readability */
+  background-color: #222;
+  color: #ffffff;
   border-radius: 8px;
   overflow: hidden;
 }
 
 .students-table th {
-  background: linear-gradient(135deg,#222, #183b3f, #222); /* Subtle gradient for header */
+  background: linear-gradient(135deg, #222, #183b3f, #222);
   color: #ffffff;
   padding: 12px;
   text-align: left;
 }
 
 .students-table td {
-  background-color: #235158; /* Solid dark purple for rows */
+  background-color: #235158;
   padding: 12px;
-  border: 1px solid #222; /* Dark border color */
+  border: 1px solid #222;
 }
 
 .students-table tr:nth-child(even) td {
-  background-color: #222; /* Slightly darker purple for alternate rows */
+  background-color: #222;
 }
 
 .students-table tr:hover td {
-  background-color: #000; /* Dark purple highlight on hover */
+  background-color: #000;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  .main-content {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .students-table th, .students-table td {
+    padding: 8px; /* Reduce padding for smaller screens */
+    font-size: 14px; /* Adjust font size for better readability */
+  }
 }

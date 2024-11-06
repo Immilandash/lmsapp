@@ -4,6 +4,7 @@
     padding: 15px;
     width: 200px;
     height: 100vh;
+    position: -webkit-sticky;
   }
   
   .sidebar h2 {
