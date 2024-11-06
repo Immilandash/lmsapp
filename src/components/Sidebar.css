@@ -3,8 +3,8 @@
     color: white;
     padding: 15px;
     width: 200px;
-    height: 100vh;
-    position: -webkit-sticky;
+    /* height: 100vh; */
+    position: sticky;
   }
   
   .sidebar h2 {
